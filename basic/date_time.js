@@ -16,4 +16,16 @@ console.log(createdDate.toDateString());
 //time stamp
 let timestamp=Date.now();
 console.log(timestamp);
-console.log(timestamp.get);
+// console.log(timestamp.);
+//converting it to sec
+console.log(Math.floor(Date.now()/1000));
+
+let newDate=new Date();
+console.log(newDate.getDate());
+console.log(newDate.getDay());//days are also start with zero in some sys 
+console.log(newDate.getMonth()+1);
+
+newDate.toLocaleString('default',{
+ weekday:"long",
+
+})
